@@ -3,12 +3,1148 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#f2f0e9" />
+    <meta name="theme-color" content="#ffffff" />
     <meta name="description" content="Build LLM-powered APIs, automate complex workflows, and deploy data apps—all from a single, unified platform." />
     <title>Kanta — Unified AI Workflow Orchestration Platform</title>
   </head>
   <body>
-    <div id="app"></div>
+    
+    <!-- Site Header Navigation (Sticky Navbar) -->
+    <header class="site-header">
+      <div class="site-header-inner">
+        <a class="brand" href="#top" aria-label="Kanta home"><img class="brand-logo" src="/kanta-logo.png" alt="Kanta" /></a>
+        <nav class="desktop-nav" aria-label="Main navigation">
+          <a href="#features">Features</a>
+          <a href="#integrations">Integrations</a>
+          <a href="#use-cases">Use Cases</a>
+        </nav>
+        <div class="header-actions">
+          <a class="button button-small button-red" href="#contact">Contact Us</a>
+          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+            <span></span><span></span>
+          </button>
+        </div>
+        <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
+          <a href="#features">Features <span aria-hidden="true">↗</span></a>
+          <a href="#integrations">Integrations <span aria-hidden="true">↗</span></a>
+          <a href="#use-cases">Use Cases <span aria-hidden="true">↗</span></a>
+          <a href="#contact">Contact Us <span aria-hidden="true">↗</span></a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      
+      <!-- 1. Top Hero Section -->
+      <section class="hero page-width hero-intro-active" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <h1 id="hero-title">Orchestrate<br />Intelligent Tasks.<br />Build Your <span>AI Agents.</span></h1>
+          <p class="hero-lede">Build LLM-powered APIs, automate complex workflows,<br class="desktop-only" /> and deploy data apps - all from a single, unified platform.</p>
+          <div class="hero-actions">
+            <a class="button button-red" href="#contact"><span class="button-phone" aria-hidden="true">☎</span> Call Us</a>
+            <a class="button button-gold" href="#features">Explore Features <span aria-hidden="true">↗</span></a>
+          </div>
+          
+          <!-- Modern Clean Highlights Badges -->
+          <div class="hero-proof-modern" aria-label="Platform highlights">
+            <div class="proof-pill-modern">
+              <span class="proof-pill-icon icon-red">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+              </span>
+              <strong>17+ Workflow Nodes</strong>
+            </div>
+
+            <div class="proof-pill-modern">
+              <span class="proof-pill-icon icon-emerald">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19H9a4.5 4.5 0 1 1 .9-8.9 6 6 0 0 1 11.6 2.4A4.5 4.5 0 0 1 17.5 19z"/></svg>
+              </span>
+              <strong>Cloud Hosted</strong>
+              <span class="proof-live-dot"></span>
+            </div>
+
+            <div class="proof-pill-modern">
+              <span class="proof-pill-icon icon-purple">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10H12V2z"/><path d="M12 12L2.1 12a10 10 0 0 0 9.9 10V12z"/><path d="M12 12V2a10 10 0 0 1 10 10H12z"/></svg>
+              </span>
+              <strong>Multi-LLM Support</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual visual-sequence-pending" aria-label="Kanta AI robot with support assistant preview">
+          <div class="visual-intro-mark" aria-hidden="true"><img src="/kanta-mark.png" alt="Kanta logo mark" /></div>
+          
+          <div class="assistant-panel" aria-label="AI support assistant preview">
+            <div class="assistant-panel-head">
+              <div class="assistant-panel-title">
+                <img src="/kanta-robot-head-icon.png" alt="Kanta Robot Avatar" class="new-robot-avatar-mini" />
+                <span><strong>AI Support Assistant</strong><small>Powered by Kanta.AI</small></span>
+              </div>
+              <span class="assistant-online"><i></i> Online</span>
+            </div>
+            <div class="assistant-panel-body"><div class="assistant-user-bubble">What's my current order status?</div><div class="assistant-response"><p>Your order <strong>#ORD-2024-1234</strong> is currently <b>in transit.</b></p><div class="assistant-response-meta"><span>Expected delivery:<b>Feb 15, 2024</b></span><span>Carrier:<b>FedEx</b></span></div></div><div class="assistant-typing"><i></i><i></i><i></i><span>AI is generating a chart...</span></div></div>
+            <div class="assistant-panel-input"><span>Ask about invoices, analytics...</span><b aria-hidden="true">➤</b></div>
+          </div>
+
+          <!-- REAL UI ASSISTANT CAPABILITIES WIDGET CARD WITH ICONIFY SVGs -->
+          <div class="visual-feature-list real-ui-capabilities-card" aria-label="Assistant capabilities">
+            <div class="real-ui-card-head">
+              <strong>Assistant Features</strong>
+              <span class="real-ui-badge">v2.4 Active</span>
+            </div>
+
+            <div class="real-ui-items-grid">
+              
+              <!-- Item 1: Database Access -->
+              <div class="real-ui-item">
+                <div class="ui-icon-badge icon-bg-blue">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <ellipse cx="12" cy="5" rx="9" ry="3"/>
+                    <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/>
+                    <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+                  </svg>
+                </div>
+                <div class="ui-item-text">
+                  <strong>Database Access</strong>
+                  <small>Query tables with SQL constraints</small>
+                </div>
+              </div>
+
+              <!-- Item 2: Export -->
+              <div class="real-ui-item">
+                <div class="ui-icon-badge icon-bg-emerald">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                    <polyline points="7 10 12 15 17 10"/>
+                    <line x1="12" y1="15" x2="12" y2="3"/>
+                  </svg>
+                </div>
+                <div class="ui-item-text">
+                  <strong>Export</strong>
+                  <small>Download conversation history</small>
+                </div>
+              </div>
+
+              <!-- Item 3: Row-Level Security -->
+              <div class="real-ui-item">
+                <div class="ui-icon-badge icon-bg-red">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                  </svg>
+                </div>
+                <div class="ui-item-text">
+                  <strong>Row-Level Security</strong>
+                  <small>User-specific data access</small>
+                </div>
+              </div>
+
+              <!-- Item 4: Voice Input -->
+              <div class="real-ui-item">
+                <div class="ui-icon-badge icon-bg-purple">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/>
+                    <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
+                    <line x1="12" y1="19" x2="12" y2="23"/>
+                    <line x1="8" y1="23" x2="16" y2="23"/>
+                  </svg>
+                </div>
+                <div class="ui-item-text">
+                  <strong>Voice Input</strong>
+                  <small>Speech-to-text queries</small>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="robot-image-stage"><video id="robot-video" muted playsinline preload="auto" aria-label="A friendly Kanta robot assistant waving hello"><source src="/white.mp4" type="video/mp4" /></video></div>
+          
+          <div class="bot-chat" aria-hidden="true">
+            <div class="bot-chat-title"><img class="brand-logo-mini" src="/kanta-logo.png" alt="" /><strong id="bot-chat-title-text">Hi, I'm Kanta!</strong></div>
+            <p id="bot-chat-msg-text">How may I help you?</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. Clean Corporate KPI Stats Section -->
+      <section class="proof-strip-modern scroll-reveal" aria-label="Kanta platform stats">
+        <div class="page-width proof-grid-modern">
+          <div class="proof-header-modern">
+            <div class="section-tag-modern">
+              <span class="tag-hash">//</span>
+              <span>Autonomous AI Platform</span>
+            </div>
+
+            <h2 class="proof-title-headline">
+              Build your app<br />
+              <span class="highlight-text-red">in minutes.</span>
+            </h2>
+          </div>
+
+          <!-- Clean KPI Metrics Cards -->
+          <div class="proof-stats-container">
+            
+            <!-- Card 1: Speed -->
+            <div class="stat-card-modern">
+              <div class="stat-head-row">
+                <span class="stat-number">3x</span>
+                <span class="stat-tag tag-standard">SPEED</span>
+              </div>
+              <strong class="stat-label">Faster workflow builds</strong>
+              <small class="stat-sub">From prompt to production DAG</small>
+            </div>
+
+            <!-- Card 2: Live -->
+            <div class="stat-card-modern">
+              <div class="stat-head-row">
+                <span class="stat-number">24/7</span>
+                <span class="stat-tag tag-live"><span class="live-dot-green"></span> LIVE</span>
+              </div>
+              <strong class="stat-label">Agents on call</strong>
+              <small class="stat-sub">Autonomous AI task execution</small>
+            </div>
+
+            <!-- Card 3: Secure -->
+            <div class="stat-card-modern">
+              <div class="stat-head-row">
+                <span class="stat-number">100%</span>
+                <span class="stat-tag tag-standard">SECURE</span>
+              </div>
+              <strong class="stat-label">Your data, your rules</strong>
+              <small class="stat-sub">Enterprise privacy & control</small>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. High-Tech Problem & Solution Section -->
+      <section class="stack-transform-section page-width scroll-reveal" id="stack-comparison">
+        
+        <!-- Top Center Header -->
+        <div class="transform-header-center">
+          <div class="section-tag-modern transform-tag-spacing">
+            <span class="tag-hash">//</span>
+            <span>THE PROBLEM & SOLUTION</span>
+          </div>
+
+          <h2 class="transform-title">
+            Your AI stack is <span class="text-red-highlight">too fragmented</span>
+          </h2>
+
+          <p class="transform-subhead">
+            Most teams building AI applications end up juggling 4-5 different tools, each with its own learning curve, billing, and integration challenges.
+          </p>
+
+          <!-- Interactive 2-Way Mode Switcher -->
+          <div class="transform-switcher-group">
+            <button id="btn-stack-problem" class="t-switch-btn">
+              <span class="t-dot dot-red"></span>
+              <span>Traditional Stack</span>
+            </button>
+
+            <button id="btn-stack-solution" class="t-switch-btn active-solution">
+              <span class="t-dot dot-emerald"></span>
+              <span>Kanta Unified Platform</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Main Transformation Stage Canvas -->
+        <div class="transform-canvas-stage">
+          
+          <!-- VIEW 1: KANTA SOLUTION STAGE (ACTIVE BY DEFAULT) -->
+          <div id="view-solution" class="transform-card-stage solution-active-view active-stage">
+            <div class="solution-grid-layout">
+              
+              <!-- Left Column: Kanta.AI Workflow Builder DAG Window -->
+              <div class="solution-flow-col">
+                <div class="flow-header-row">
+                  <div class="flow-brand-title">
+                    <div class="dots-mini-row">
+                      <span class="dot-red"></span>
+                      <span class="dot-yellow"></span>
+                      <span class="dot-green"></span>
+                    </div>
+                    <strong>Kanta.AI — Workflow Builder</strong>
+                  </div>
+                  <span class="flow-status-chip"><i class="brand-live-dot"></i> Running</span>
+                </div>
+
+                <div class="pipeline-sub-bar">
+                  <span>Document Processing Pipeline</span>
+                  <small class="badge-dag">Visual DAG</small>
+                </div>
+
+                <!-- Animated DAG Pipeline Cards -->
+                <div class="flow-pipeline-track">
+                  <div class="p-node node-start">
+                    <span class="p-dot-green"></span>
+                    <div>
+                      <strong>Start</strong>
+                      <small>Trigger Event</small>
+                    </div>
+                  </div>
+
+                  <div class="p-connector">➔</div>
+
+                  <div class="p-node node-ocr">
+                    <span class="chip-ocr">OCR</span>
+                    <div>
+                      <strong>Extract</strong>
+                      <small>Document Parse</small>
+                    </div>
+                  </div>
+
+                  <div class="p-connector">➔</div>
+
+                  <div class="p-node node-llm">
+                    <span class="chip-llm">LLM</span>
+                    <div>
+                      <strong>Process</strong>
+                      <small>AI Reasoning</small>
+                    </div>
+                  </div>
+
+                  <div class="p-connector">➔</div>
+
+                  <div class="p-node node-output">
+                    <span class="p-dot-gold"></span>
+                    <div>
+                      <strong>Output</strong>
+                      <small>Structured Data</small>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Impact KPIs Row -->
+                <div class="solution-kpi-grid">
+                  <div class="kpi-box">
+                    <strong class="kpi-val text-white">2.4k</strong>
+                    <span class="kpi-lbl">Requests Processed</span>
+                  </div>
+                  <div class="kpi-box">
+                    <strong class="kpi-val text-emerald-highlight">99.2%</strong>
+                    <span class="kpi-lbl">Success Rate</span>
+                  </div>
+                  <div class="kpi-box">
+                    <strong class="kpi-val text-white">340ms</strong>
+                    <span class="kpi-lbl">Avg Latency</span>
+                  </div>
+                </div>
+
+                <!-- 4 Solution Highlights Bar -->
+                <div class="solution-highlights-ribbon">
+                  <span>✓ Frontend + Backend + Database in one platform</span>
+                  <span>✓ No code required—build visually</span>
+                  <span>✓ AI-native from the ground up</span>
+                  <span>✓ Self-hosted; your data stays yours</span>
+                </div>
+              </div>
+
+              <!-- Right Column: 3D Mascot Showcase Card -->
+              <div class="solution-mascot-col">
+                <div class="mascot-avatar-wrapper">
+                  <img src="/kanta-robot-3d-waving.png" alt="Kanta 3D Robot Mascot" class="mascot-visual-img" />
+                </div>
+                <div class="mascot-speech-bubble">
+                  <img src="/kanta-robot-head-icon.png" alt="Kanta Robot Head" class="speech-bot-avatar" />
+                  <p id="mascot-speech-text">
+                    Say goodbye to 5 separate tools! Kanta unifies your frontend, backend, database, and LLMs into one intuitive workflow builder.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- VIEW 2: TRADITIONAL FRAGMENTED STACK STAGE -->
+          <div id="view-problem" class="transform-card-stage problem-active-view">
+            <div class="problem-stack-container">
+              <div class="problem-warning-header">
+                <span class="p-warning-icon">⚠️</span>
+                <div>
+                  <strong>5 Separate Tools & Codebases Required</strong>
+                  <small>Traditional fragmented stacks slow down development and increase maintenance overhead.</small>
+                </div>
+              </div>
+
+              <div class="problem-layers-grid">
+                <div class="problem-layer-card">
+                  <span class="layer-num">01</span>
+                  <div>
+                    <strong>Frontend UI</strong>
+                    <small>React, Vue, Svelte</small>
+                  </div>
+                  <span class="layer-alert">Fragmented</span>
+                </div>
+
+                <div class="problem-layer-card">
+                  <span class="layer-num">02</span>
+                  <div>
+                    <strong>Backend Logic</strong>
+                    <small>FastAPI, Express, .NET</small>
+                  </div>
+                  <span class="layer-alert">Custom Code</span>
+                </div>
+
+                <div class="problem-layer-card">
+                  <span class="layer-num">03</span>
+                  <div>
+                    <strong>Database Layer</strong>
+                    <small>PostgreSQL + ORMs</small>
+                  </div>
+                  <span class="layer-alert">Overhead</span>
+                </div>
+
+                <div class="problem-layer-card">
+                  <span class="layer-num">04</span>
+                  <div>
+                    <strong>AI / LLM Engine</strong>
+                    <small>OpenAI SDK + Custom Code</small>
+                  </div>
+                  <span class="layer-alert">Glue Code</span>
+                </div>
+              </div>
+
+              <div class="problem-footer-bar">
+                <strong>Result:</strong> 5 separate tools & deployments required.
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="transform-cta-center">
+          <a href="#contact" class="button button-red button-explore">Explore the unified stack <span aria-hidden="true">↗</span></a>
+        </div>
+
+      </section>
+
+      <!-- 4. Realistic 3D Unified Platform Section -->
+      <section class="unified-platform-3d page-width scroll-reveal" id="features">
+        <div class="unified-header">
+          <div class="section-tag-modern transform-tag-spacing">
+            <span class="tag-hash">//</span>
+            <span>UNIFIED STACK</span>
+          </div>
+
+          <h2 class="unified-title">
+            Build AI Applications<br />
+            <span class="text-red-highlight">On One Platform</span>
+          </h2>
+
+          <p class="unified-lede">
+            Everything you need to build enterprise-grade applications. From LLM-powered APIs to Full-Stack AI Apps, all you need is Kanta.
+          </p>
+        </div>
+
+        <!-- 3D Realistic Cards Grid -->
+        <div class="unified-cards-grid">
+          
+          <!-- CARD 1: APPS -->
+          <div class="card-3d-wrapper" data-tilt>
+            <div class="card-3d-inner card-theme-red">
+              <div class="card-3d-head">
+                <div class="card-icon-3d icon-bg-red">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/></svg>
+                </div>
+                <div class="card-title-group">
+                  <h3>Apps</h3>
+                  <span>No-Code Frontend Builder</span>
+                </div>
+                <span class="card-arrow-badge">↗</span>
+              </div>
+
+              <p class="card-3d-desc">
+                Build complete web applications—not just dashboards—using a visual builder. Replace React, Vue, or Svelte with drag-and-drop components that connect directly to your backend.
+              </p>
+
+              <div class="card-3d-features">
+                <div class="feature-micro-item">
+                  <div class="feature-bullet bullet-red"></div>
+                  <div>
+                    <strong>20+ Components</strong>
+                    <small>Forms, tables, charts, navigation, and more</small>
+                  </div>
+                </div>
+
+                <div class="feature-micro-item">
+                  <div class="feature-bullet bullet-red"></div>
+                  <div>
+                    <strong>Multi-Page Apps</strong>
+                    <small>Full routing and navigation built-in</small>
+                  </div>
+                </div>
+
+                <div class="feature-micro-item">
+                  <div class="feature-bullet bullet-red"></div>
+                  <div>
+                    <strong>Direct Backend Access</strong>
+                    <small>Trigger workflows from any interaction</small>
+                  </div>
+                </div>
+
+                <div class="feature-micro-item">
+                  <div class="feature-bullet bullet-red"></div>
+                  <div>
+                    <strong>Role-Based Access</strong>
+                    <small>Public, authenticated, or role-specific</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 2: WORKFLOWS -->
+          <div class="card-3d-wrapper" data-tilt>
+            <div class="card-3d-inner card-theme-orange">
+              <div class="card-3d-head">
+                <div class="card-icon-3d icon-bg-orange">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+                </div>
+                <div class="card-title-group">
+                  <h3>Workflows</h3>
+                  <span>Visual Backend Engine</span>
+                </div>
+                <span class="card-arrow-badge">↗</span>
+              </div>
+
+              <p class="card-3d-desc">
+                Replace FastAPI, Express, or .NET with visual logic. Build complete backend workflows with database operations, API calls, and AI integration—no code required.
+              </p>
+
+              <div class="card-3d-features">
+                <div class="feature-micro-item">
+                  <div class="feature-bullet bullet-orange"></div>
+                  <div>
+                    <strong>17 Specialized Nodes</strong>
+                    <small>LLM, OCR, Code, HTTP, Database, and more</small>
+                  </div>
+                </div>
+
+                <div class="feature-micro-item">
+                  <div class="feature-bullet bullet-orange"></div>
+                  <div>
+                    <strong>Parallel Execution</strong>
+                    <small>DAG-based with automatic optimization</small>
+                  </div>
+                </div>
+
+                <div class="feature-micro-item">
+                  <div class="feature-bullet bullet-orange"></div>
+                  <div>
+                    <strong>Conditional Logic</strong>
+                    <small>14+ operators for complex branching</small>
+                  </div>
+                </div>
+
+                <div class="feature-micro-item">
+                  <div class="feature-bullet bullet-orange"></div>
+                  <div>
+                    <strong>Sub-Workflows</strong>
+                    <small>Reusable components with loop support</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 3: DATABASE -->
+          <div class="card-3d-wrapper" data-tilt>
+            <div class="card-3d-inner card-theme-gold">
+              <div class="card-3d-head">
+                <div class="card-icon-3d icon-bg-gold">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+                </div>
+                <div class="card-title-group">
+                  <h3>Database</h3>
+                  <span>Built-in Data Layer</span>
+                </div>
+                <span class="card-arrow-badge">↗</span>
+              </div>
+
+              <p class="card-3d-desc">
+                No PostgreSQL setup, no migrations, no ORMs. Create tables, define schemas, and query data—all managed within the platform and accessible from Workflows and Apps.
+              </p>
+
+              <div class="card-3d-features">
+                <div class="feature-micro-item">
+                  <div class="feature-bullet bullet-gold"></div>
+                  <div>
+                    <strong>Visual Schema Builder</strong>
+                    <small>Create tables and relationships in UI</small>
+                  </div>
+                </div>
+
+                <div class="feature-micro-item">
+                  <div class="feature-bullet bullet-gold"></div>
+                  <div>
+                    <strong>Row-Level Security</strong>
+                    <small>Fine-grained access control built-in</small>
+                  </div>
+                </div>
+
+                <div class="feature-micro-item">
+                  <div class="feature-bullet bullet-gold"></div>
+                  <div>
+                    <strong>REST API Access</strong>
+                    <small>Query and write via API endpoints</small>
+                  </div>
+                </div>
+
+                <div class="feature-micro-item">
+                  <div class="feature-bullet bullet-gold"></div>
+                  <div>
+                    <strong>Project Isolation</strong>
+                    <small>Separate data namespaces per project</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="unified-footer-banner">
+          <p class="banner-plus-text">
+            Plus: <span>LLM Endpoints</span> • <span>Knowledge Base (RAG)</span> • <span>Embeddable Chatbot</span> • <span>Enterprise Security</span>
+          </p>
+
+          <a class="button button-gold button-connect" href="#contact">
+            See how it all connects <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- 5. Workflow Studio Section -->
+      <section class="workflow-studio-section page-width scroll-reveal" id="workflow-studio">
+        <div class="studio-layout-grid">
+          <div class="studio-copy-col">
+            <div class="section-tag-modern transform-tag-spacing">
+              <span class="tag-hash">//</span>
+              <span>WORKFLOW STUDIO</span>
+            </div>
+
+            <h2 class="studio-title">
+              Ready for any <span class="text-red-highlight">automation</span>
+            </h2>
+
+            <p class="studio-lede">
+              Build complex AI pipelines visually. Our DAG-based engine handles parallel execution, conditional branching, and sub-workflows automatically.
+            </p>
+
+            <div class="studio-features-list">
+              <div class="studio-feature-card">
+                <span class="studio-check-icon">✓</span>
+                <div>
+                  <strong>Parallel Execution</strong>
+                  <small>Independent nodes run simultaneously via ThreadPool</small>
+                </div>
+              </div>
+
+              <div class="studio-feature-card">
+                <span class="studio-check-icon">✓</span>
+                <div>
+                  <strong>Conditional Branching</strong>
+                  <small>14+ operators: equals, contains, regex, and more</small>
+                </div>
+              </div>
+
+              <div class="studio-feature-card">
+                <span class="studio-check-icon">✓</span>
+                <div>
+                  <strong>Sub-Workflows</strong>
+                  <small>Reusable components with loop support for iteration</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="studio-library-col">
+            <div class="node-library-card">
+              <div class="library-category">
+                <div class="cat-label"><span class="cat-dot dot-ink">●</span> Control <small>(2)</small></div>
+                <div class="cat-pills">
+                  <span class="node-pill">▷ Start</span>
+                  <span class="node-pill">⚐ End</span>
+                </div>
+              </div>
+
+              <div class="library-category">
+                <div class="cat-label"><span class="cat-dot dot-red">●</span> AI / LLM <small>(3)</small></div>
+                <div class="cat-pills">
+                  <span class="node-pill pill-red">🌐 LLM</span>
+                  <span class="node-pill pill-red">🏷️ Classifier</span>
+                  <span class="node-pill pill-red">📄 OCR</span>
+                </div>
+              </div>
+
+              <div class="library-category">
+                <div class="cat-label"><span class="cat-dot dot-gold">●</span> Processing <small>(5)</small></div>
+                <div class="cat-pills">
+                  <span class="node-pill pill-gold">&lt;&gt; Code</span>
+                  <span class="node-pill pill-gold">🌐 HTTP Request</span>
+                  <span class="node-pill pill-gold">📄 JSON Reader</span>
+                  <span class="node-pill pill-gold">📄 Doc Extractor</span>
+                  <span class="node-pill pill-gold">📊 Sheet Reader</span>
+                </div>
+              </div>
+
+              <div class="library-category">
+                <div class="cat-label"><span class="cat-dot dot-blue">●</span> Logic <small>(2)</small></div>
+                <div class="cat-pills">
+                  <span class="node-pill pill-blue">🔀 If-Else</span>
+                  <span class="node-pill pill-blue">🔗 Sub-Workflow</span>
+                </div>
+              </div>
+
+              <div class="library-category">
+                <div class="cat-label"><span class="cat-dot dot-emerald">●</span> Output <small>(2)</small></div>
+                <div class="cat-pills">
+                  <span class="node-pill pill-emerald">📊 Data Viz</span>
+                  <span class="node-pill pill-emerald">🌐 HTML Display</span>
+                </div>
+              </div>
+
+              <div class="library-category">
+                <div class="cat-label"><span class="cat-dot dot-purple">●</span> Database <small>(2)</small></div>
+                <div class="cat-pills">
+                  <span class="node-pill pill-purple">🗄️ DB Query</span>
+                  <span class="node-pill pill-purple">🗄️ DB Write</span>
+                </div>
+              </div>
+
+              <div class="library-footer">
+                <span class="pill-more">More to come...</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 6. Golden High-Tech Integrations Section -->
+      <section class="integrations-gold-section page-width scroll-reveal" id="integrations">
+        <div class="integrations-header-center">
+          <div class="section-tag-modern-gold transform-tag-spacing">
+            <span class="tag-hash-gold">//</span>
+            <span>INTEGRATIONS & STACK</span>
+          </div>
+
+          <h2 class="integrations-title">
+            Works with <span class="text-gold-gradient">your stack</span>
+          </h2>
+
+          <p class="integrations-subhead">
+            You don't need to start all over. Connect your existing data, then add AI capabilities to your current apps.
+          </p>
+        </div>
+
+        <div class="integrations-cards-grid">
+          <div class="gold-glass-card">
+            <div class="card-gold-head">
+              <div class="gold-icon-circle">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+              </div>
+              <div>
+                <h3>Connect Your Data</h3>
+                <small>Bring data from your existing systems into the platform</small>
+              </div>
+            </div>
+
+            <div class="gold-card-checklist">
+              <div class="gold-check-item"><span class="gold-check-icon">✓</span><span>Your databases</span></div>
+              <div class="gold-check-item"><span class="gold-check-icon">✓</span><span>Your APIs</span></div>
+              <div class="gold-check-item"><span class="gold-check-icon">✓</span><span>Your documents</span></div>
+              <div class="gold-check-item"><span class="gold-check-icon">✓</span><span>Your spreadsheets</span></div>
+            </div>
+          </div>
+
+          <div class="gold-glass-card">
+            <div class="card-gold-head">
+              <div class="gold-icon-circle">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              </div>
+              <div>
+                <h3>Add AI to Your Apps</h3>
+                <small>Use Kanta as an AI backend for your existing applications</small>
+              </div>
+            </div>
+
+            <div class="gold-card-checklist">
+              <div class="gold-check-item"><span class="gold-check-icon">✓</span><span>Embed our chatbot</span></div>
+              <div class="gold-check-item"><span class="gold-check-icon">✓</span><span>Call our API</span></div>
+              <div class="gold-check-item"><span class="gold-check-icon">✓</span><span>Automate your workflows</span></div>
+              <div class="gold-check-item"><span class="gold-check-icon">✓</span><span>Process your documents</span></div>
+            </div>
+          </div>
+
+          <div class="gold-glass-card">
+            <div class="card-gold-head">
+              <div class="gold-icon-circle">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <div>
+                <h3>Keep What Works</h3>
+                <small>Zero friction—we work seamlessly alongside your current stack</small>
+              </div>
+            </div>
+
+            <div class="gold-card-checklist">
+              <div class="gold-check-item"><span class="gold-check-icon">✓</span><span>Your existing database stays</span></div>
+              <div class="gold-check-item"><span class="gold-check-icon">✓</span><span>Your existing apps stay</span></div>
+              <div class="gold-check-item"><span class="gold-check-icon">✓</span><span>Your existing team stays</span></div>
+              <div class="gold-check-item"><span class="gold-check-icon">✓</span><span>Your existing processes stay</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gold-integration-ribbon">
+          <p class="ribbon-gold-sub">Works with all major AI providers, databases, and cloud services.</p>
+          <div class="ribbon-gold-badges">
+            <span class="gold-pill-chip">OpenAI</span>
+            <span class="gold-pill-chip">Anthropic</span>
+            <span class="gold-pill-chip">PostgreSQL</span>
+            <span class="gold-pill-chip">Slack</span>
+            <span class="gold-pill-chip">HubSpot</span>
+            <span class="gold-pill-chip">Stripe</span>
+            <span class="gold-pill-chip">AWS</span>
+            <span class="gold-pill-chip">+ More</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7. Embedded AI Agent Section -->
+      <section class="embed-agent-section-revised page-width scroll-reveal" id="embed-agent">
+        <div class="embed-revised-header">
+          <div class="section-tag-modern transform-tag-spacing">
+            <span class="tag-hash">//</span>
+            <span>EMBEDDED AI AGENT</span>
+          </div>
+
+          <h2 class="embed-revised-title">
+            Add AI to your product <span class="text-red-highlight">in one line</span>
+          </h2>
+
+          <p class="embed-revised-subhead">
+            For example, you can embed a fully-featured AI chatbot into any web application. The chatbot can access your database, generate visualizations, and respect user-specific data permissions.
+          </p>
+        </div>
+
+        <div class="embed-stage-grid">
+          <div class="live-chat-stage">
+            <div class="chat-card-window light-mode-chat-window">
+              <div class="chat-window-bar light-mode-bar">
+                <div class="chat-bot-brand">
+                  <img src="/kanta-robot-head-icon.png" alt="Kanta Robot Avatar" class="chat-robot-avatar-img" />
+                  <div>
+                    <strong class="text-dark-title">AI Support Assistant</strong>
+                    <small class="text-muted-sub">Powered by Kanta.AI</small>
+                  </div>
+                </div>
+
+                <div class="online-pulse-pill light-online-pill">
+                  <span class="pulse-dot-emerald"></span> Online
+                </div>
+              </div>
+
+              <div class="chat-window-messages light-messages-body" id="live-chat-messages-container">
+                <div class="user-chat-bubble" id="user-chat-bubble-text">
+                  What's my current order status?
+                </div>
+
+                <div class="bot-chat-turn" id="bot-chat-turn-box">
+                  <img src="/kanta-robot-head-icon.png" alt="Kanta Robot" class="bot-bubble-avatar" />
+                  <div class="bot-bubble-content light-bot-bubble" id="bot-bubble-inner-html">
+                    <p>Your order <strong>#ORD-2024-1234</strong> is currently <span class="text-emerald-bold">in transit.</span></p>
+                    <div class="meta-breakdown-card light-meta-card">
+                      <div><span>Expected delivery:</span><strong>Feb 15, 2024</strong></div>
+                      <div><span>Carrier:</span><strong>FedEx</strong></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="bot-typing-row" id="bot-typing-row">
+                  <img src="/kanta-robot-head-icon.png" alt="Kanta Robot" class="bot-bubble-avatar-mini" />
+                  <div class="typing-pill-body light-typing-pill">
+                    <span class="t-dot dot-dark"></span><span class="t-dot dot-dark"></span><span class="t-dot dot-dark"></span>
+                    <span id="bot-typing-status-msg" class="text-dark-typing">AI is querying database...</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="chat-input-stage light-input-stage">
+                <input type="text" id="dummy-chat-input" class="light-input-field" value="Ask about your orders, invoices, analytics..." readonly />
+                <button class="chat-send-btn" type="button" aria-label="Send message">➤</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="embed-features-stage">
+            <div class="caps-4-grid">
+              <div class="cap-tile"><span class="cap-tile-icon">▤</span><div><strong>Database Access</strong><small>Query tables with SQL constraints</small></div></div>
+              <div class="cap-tile"><span class="cap-tile-icon">📊</span><div><strong>Visualizations</strong><small>Generate charts from data</small></div></div>
+              <div class="cap-tile"><span class="cap-tile-icon">🛡️</span><div><strong>Row-Level Security</strong><small>User-specific data access</small></div></div>
+              <div class="cap-tile"><span class="cap-tile-icon">🎙️</span><div><strong>Voice Input</strong><small>Speech-to-text queries</small></div></div>
+            </div>
+
+            <div class="glass-code-box">
+              <div class="code-bar-top">
+                <span class="code-name">embed.html</span>
+                <div class="dots-mini"><span class="d-red"></span><span class="d-yellow"></span><span class="d-green"></span></div>
+              </div>
+              <pre class="code-snippet-pre"><code><span class="code-comment">&lt;!-- Simple Iframe Embedding --&gt;</span>
+&lt;<span class="code-tag">iframe</span>
+  <span class="code-attr">src</span>=<span class="code-val">"https://app.kanta.com/serve/v2/chat?token=xxx"</span>
+  <span class="code-attr">width</span>=<span class="code-val">"400"</span>
+  <span class="code-attr">height</span>=<span class="code-val">"600"</span>&gt;
+&lt;/<span class="code-tag">iframe</span>&gt;</code></pre>
+            </div>
+
+            <div class="security-emerald-banner">
+              <span class="sec-shield">🛡️</span>
+              <div>
+                <strong>Row-Level Security Built-In</strong>
+                <small>Use constraint sessions to ensure each user only sees their own data. Zero risk of data leakage between customers.</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 8. Enterprise Use Cases Section -->
+      <section class="use-cases-grid-section page-width scroll-reveal" id="use-cases">
+        <div class="use-cases-header-center">
+          <div class="section-tag-modern transform-tag-spacing">
+            <span class="tag-hash">//</span>
+            <span>ENTERPRISE USE CASES</span>
+          </div>
+
+          <h2 class="use-cases-title">
+            Built for real <span class="text-red-highlight">workflows</span>
+          </h2>
+
+          <p class="use-cases-subhead">
+            See how teams use Kanta to automate complex end-to-end processes and deliver AI-powered experiences at scale.
+          </p>
+        </div>
+
+        <div class="even-workflow-grid">
+          
+          <!-- CARD 1 -->
+          <div class="even-card card-accent-red">
+            <div class="even-card-top-bar">
+              <span class="even-category-chip chip-bg-red">OPERATIONS TEAMS</span>
+              <span class="even-arrow-icon">↗</span>
+            </div>
+
+            <h3 class="even-card-title">Document Processing Pipeline</h3>
+            <p class="even-card-desc">Build an automated pipeline that extracts, classifies, validates, and routes documents. Process invoices, contracts, or applications at scale.</p>
+            <div class="even-divider"></div>
+
+            <div class="even-nodes-group">
+              <span class="even-section-label">KEY NODES</span>
+              <div class="even-chips-flex">
+                <span class="even-node-tag">📄 OCR</span>
+                <span class="even-node-tag">🧠 LLM</span>
+                <span class="even-node-tag">🔀 If-Else</span>
+                <span class="even-node-tag">⚡ Code</span>
+                <span class="even-node-tag">📊 Data Viz</span>
+              </div>
+            </div>
+
+            <div class="even-metrics-grid">
+              <div class="even-metric-box"><strong class="metric-num text-red-highlight">100+</strong><span class="metric-sub">Documents / hour</span></div>
+              <div class="even-metric-box"><strong class="metric-num text-red-highlight">85%</strong><span class="metric-sub">Review time saved</span></div>
+            </div>
+          </div>
+
+          <!-- CARD 2 -->
+          <div class="even-card card-accent-gold">
+            <div class="even-card-top-bar">
+              <span class="even-category-chip chip-bg-gold">B2B SAAS COMPANIES</span>
+              <span class="even-arrow-icon">↗</span>
+            </div>
+
+            <h3 class="even-card-title">Customer Support Bot</h3>
+            <p class="even-card-desc">Embed an AI chatbot that queries your database with row-level security. Each customer sees only their own data (order status, invoices, metrics).</p>
+            <div class="even-divider"></div>
+
+            <div class="even-nodes-group">
+              <span class="even-section-label">KEY NODES</span>
+              <div class="even-chips-flex">
+                <span class="even-node-tag">💬 Chatbot</span>
+                <span class="even-node-tag">🗄️ DB Query</span>
+                <span class="even-node-tag">🛡️ Security</span>
+                <span class="even-node-tag">📊 Visualizations</span>
+              </div>
+            </div>
+
+            <div class="even-metrics-grid">
+              <div class="even-metric-box"><strong class="metric-num text-gold-highlight">40-60%</strong><span class="metric-sub">Ticket deflection</span></div>
+              <div class="even-metric-box"><strong class="metric-num text-gold-highlight">Instant</strong><span class="metric-sub">Response time</span></div>
+            </div>
+          </div>
+
+          <!-- CARD 3 -->
+          <div class="even-card card-accent-dark">
+            <div class="even-card-top-bar">
+              <span class="even-category-chip chip-bg-dark">ANALYSTS & DUE DILIGENCE</span>
+              <span class="even-arrow-icon">↗</span>
+            </div>
+
+            <h3 class="even-card-title">Research & Analysis Assistant</h3>
+            <p class="even-card-desc">Build a research assistant that queries your knowledge base, searches the live web, pulls from APIs, and synthesizes findings with citations.</p>
+            <div class="even-divider"></div>
+
+            <div class="even-nodes-group">
+              <span class="even-section-label">KEY NODES</span>
+              <div class="even-chips-flex">
+                <span class="even-node-tag">📚 RAG</span>
+                <span class="even-node-tag">🔍 Web Search</span>
+                <span class="even-node-tag">🌐 HTTP Request</span>
+                <span class="even-node-tag">🧠 LLM</span>
+              </div>
+            </div>
+
+            <div class="even-metrics-grid">
+              <div class="even-metric-box"><strong class="metric-num text-dark-highlight">70%</strong><span class="metric-sub">Time reduction</span></div>
+              <div class="even-metric-box"><strong class="metric-num text-dark-highlight">Multi</strong><span class="metric-sub">Sources synthesized</span></div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 9. Contact / CTA Section -->
+      <section class="compact-cta-section page-width scroll-reveal" id="contact">
+        <div class="compact-cta-card">
+          <div class="compact-cta-copy">
+            <div class="section-tag-modern transform-tag-spacing">
+              <span class="tag-hash">//</span>
+              <span>GET STARTED</span>
+            </div>
+
+            <h2 class="compact-cta-headline">
+              Ready to unify your <span class="text-red-bold">AI stack?</span>
+            </h2>
+
+            <p class="compact-cta-subhead">
+              Stop juggling multiple tools. Deploy the platform in minutes and start building enterprise-grade AI applications today.
+            </p>
+
+            <form id="contact-form" class="compact-form-row">
+              <input type="email" placeholder="Enter your work email..." required />
+              <button type="submit" class="button button-red compact-btn">
+                Request Demo
+              </button>
+            </form>
+
+            <div class="compact-features-pills">
+              <span>Enterprise security</span>
+              <span>•</span>
+              <span>Deploy in minutes</span>
+              <span>•</span>
+              <span>Cloud Hosted</span>
+            </div>
+          </div>
+
+          <div class="compact-cta-mascot">
+            <div class="mascot-avatar-circle">
+              <img src="/kanta-robot-3d-waving.png" alt="Kanta 3D Robot Mascot" class="compact-robot-img" />
+            </div>
+            <div class="mascot-speech-pill">
+              <img src="/kanta-robot-head-icon.png" alt="Robot Icon" class="mini-bot-head" />
+              <span>"Let's build together!"</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="compact-quick-grid">
+          <a class="compact-contact-pill" href="mailto:ask@kanta.ai">
+            <span class="c-pill-icon">✉️</span>
+            <div>
+              <strong>Email Us</strong>
+              <small>ask@kanta.ai</small>
+            </div>
+            <span class="c-arrow">→</span>
+          </a>
+
+          <a class="compact-contact-pill" href="#contact">
+            <span class="c-pill-icon">🗓️</span>
+            <div>
+              <strong>Book a Demo</strong>
+              <small>30-minute walkthrough</small>
+            </div>
+            <span class="c-arrow">→</span>
+          </a>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Modern Multi-Column Dark Footer -->
+    <footer class="modern-dark-footer">
+      <div class="page-width footer-top-grid">
+        
+        <!-- Brand & Tagline Col -->
+        <div class="footer-brand-col">
+          <a class="brand" href="#top"><img class="brand-logo footer-logo" src="/kanta-logo.png" alt="Kanta" /></a>
+          <p class="footer-tagline">
+            Kanta is a unified AI workflow orchestrator that empowers users to automate intelligent tasks flexibly, securely and at scale.
+          </p>
+        </div>
+
+        <!-- Navigation Columns -->
+        <div class="footer-nav-col">
+          <h4>Products</h4>
+          <ul>
+            <li><a href="#features">Agentic Product Innovation</a></li>
+            <li><a href="#embed-agent">AI Assistant</a></li>
+            <li><a href="#use-cases">Finance Intelligence</a></li>
+            <li><a href="#workflow-studio">Intelligent Document Processing</a></li>
+            <li><a href="#integrations">Product Line Item Matching</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#features">Documentation</a></li>
+            <li><a href="#integrations">API Reference</a></li>
+            <li><a href="#workflow-studio">Changelog</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#top">About</a></li>
+            <li><a href="#use-cases">News</a></li>
+            <li><a href="#contact">Careers</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="page-width footer-bottom-ribbon">
+        <span>© 2026 Kanta AI Pte Ltd. All rights reserved.</span>
+        <div class="footer-legal-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </footer>
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
