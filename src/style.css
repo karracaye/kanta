@@ -1668,14 +1668,16 @@ h1 span { color: var(--red); }
   .page-width { width: min(calc(100% - 48px), 1344px); }
   .site-header-inner { width: min(calc(100% - 48px), 1728px); }
   .desktop-nav { gap: 28px; margin-left: 0; font-size: 0.9rem; }
-  .hero { grid-template-columns: 1fr; gap: 40px; padding-top: 40px; padding-bottom: 50px; }
+  .hero { grid-template-columns: 1fr; gap: 36px; padding-top: 36px; padding-bottom: 44px; }
   .hero-copy { max-width: 100%; text-align: center; }
   .eyebrow { justify-content: center; }
-  .hero h1 { margin-left: auto; margin-right: auto; font-size: clamp(2.8rem, 6vw, 4.2rem); }
-  .hero-lede { margin-left: auto; margin-right: auto; }
+  .hero h1 { margin-left: auto; margin-right: auto; font-size: clamp(2.6rem, 5.5vw, 3.8rem); line-height: 1.02; }
+  .hero-lede { margin-left: auto; margin-right: auto; font-size: clamp(1rem, 1.8vw, 1.25rem); }
   .hero-actions { justify-content: center; }
   .hero-proof-modern { justify-content: center; margin-left: auto; margin-right: auto; }
-  .hero-visual { height: auto; min-height: 480px; }
+  .hero-visual { height: auto; min-height: 440px; margin: 0 auto; width: 100%; max-width: 620px; }
+  .assistant-panel { left: 50%; transform: translateX(-50%) scale(0.74); transform-origin: top center; }
+  .real-ui-capabilities-card { width: min(calc(100% - 32px), 480px); left: 50%; transform: translateX(-50%); }
   .proof-grid-modern { grid-template-columns: 1fr; gap: 32px; }
   .solution-grid-layout { grid-template-columns: 1fr; gap: 28px; }
   .flow-pipeline-track { grid-template-columns: 1fr; gap: 8px; }
@@ -1699,10 +1701,10 @@ h1 span { color: var(--red); }
 @media (max-width: 768px) {
   html, body { overflow-x: hidden; width: 100%; }
   .page-width { width: min(calc(100% - 32px), 1344px); }
-  .site-header-inner { width: min(calc(100% - 32px), 1728px); min-height: 72px; padding: 0 4px; }
-  .brand-logo { width: 155px; }
+  .site-header-inner { width: min(calc(100% - 32px), 1728px); min-height: 70px; padding: 0 4px; }
+  .brand-logo { width: 150px; }
   .desktop-nav, .header-actions > .button { display: none; }
-  .menu-toggle { width: 42px; height: 42px; display: flex; flex-direction: column; justify-content: center; gap: 5px; padding: 8px; background: transparent; border-radius: 8px; }
+  .menu-toggle { width: 40px; height: 40px; display: flex; flex-direction: column; justify-content: center; gap: 5px; padding: 8px; background: transparent; border-radius: 8px; }
   .menu-toggle span { width: 100%; height: 2px; display: block; background: var(--ink); transition: transform 0.2s ease; }
   .menu-toggle[aria-expanded="true"] span:first-child { transform: translateY(3.5px) rotate(45deg); }
   .menu-toggle[aria-expanded="true"] span:last-child { transform: translateY(-3.5px) rotate(-45deg); }
@@ -1711,27 +1713,29 @@ h1 span { color: var(--red); }
   .mobile-menu a { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--line); padding: 14px 0; font-size: 0.92rem; font-weight: 700; color: var(--ink); }
   .mobile-menu a:last-child { border-bottom: 0; }
 
-  /* Hero Mobile Adjustments (Robot with popup at center placed AFTER hero-lede) */
+  /* Hero Mobile Layout - Proportional Scaling & Balanced Whitespace */
   .hero {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 24px;
-    padding-bottom: 40px;
+    padding-top: 20px;
+    padding-bottom: 36px;
     gap: 0;
   }
   .hero-copy {
     display: contents;
   }
-  .eyebrow { order: 1; justify-content: center; margin-bottom: 16px; }
-  .hero h1 { order: 2; font-size: clamp(2.1rem, 8vw, 3.2rem); line-height: 1.02; letter-spacing: -0.05em; margin-bottom: 16px; text-align: center; }
-  .hero-lede { order: 3; font-size: 0.98rem; line-height: 1.45; margin-bottom: 16px; text-align: center; }
+  .eyebrow { order: 1; justify-content: center; margin-bottom: 14px; font-size: 0.65rem; }
+  .hero h1 { order: 2; font-size: clamp(2rem, 7.5vw, 3rem); line-height: 1.03; letter-spacing: -0.05em; margin-bottom: 14px; text-align: center; max-width: 96%; }
+  .hero-lede { order: 3; font-size: clamp(0.9rem, 3.8vw, 0.98rem); line-height: 1.42; margin-bottom: 14px; text-align: center; max-width: 92%; }
+  
+  /* Hero Visual & Mascot Stage */
   .hero-visual {
     order: 4;
     min-height: 0;
     height: auto;
     overflow: visible;
-    margin: 36px 0 0;
+    margin: 28px 0 0;
     padding: 0;
     width: 100%;
     display: flex;
@@ -1749,29 +1753,30 @@ h1 span { color: var(--red); }
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 64px;
-    margin-bottom: -20px;
+    margin-top: 56px;
+    margin-bottom: -18px;
   }
   #robot-video {
     width: 100%;
-    max-width: 260px;
-    max-height: 220px;
+    max-width: clamp(210px, 62vw, 260px);
+    max-height: clamp(170px, 50vw, 210px);
     object-fit: contain;
     transform: none !important;
     margin: 0 auto;
     display: block;
   }
   .bot-chat {
-    width: min(calc(100% - 32px), 285px);
+    width: min(calc(100% - 24px), 275px);
     position: absolute;
     top: 0;
     left: 50% !important;
     transform: translateX(-50%) !important;
-    padding: 11px 14px 12px;
+    padding: 10px 14px 11px;
     border-radius: 14px;
     text-align: center;
     margin: 0 auto;
     box-sizing: border-box;
+    box-shadow: 0 10px 28px rgba(8, 9, 11, 0.12);
   }
   .bot-chat-title {
     display: inline-flex;
@@ -1779,24 +1784,24 @@ h1 span { color: var(--red); }
     justify-content: center;
     gap: 6px;
     margin-bottom: 4px;
-    font-size: 0.8rem;
+    font-size: 0.78rem;
   }
   .bot-chat-title strong {
-    font-size: 0.88rem;
+    font-size: 0.85rem;
     font-weight: 800;
   }
   .bot-chat p {
     max-width: 100%;
     margin: 0 auto;
-    font-size: 0.76rem;
-    line-height: 1.35;
+    font-size: 0.74rem;
+    line-height: 1.32;
     color: var(--muted);
     font-weight: 600;
   }
-  .hero-actions { order: 5; flex-direction: column; align-items: stretch; width: 100%; gap: 10px; margin-top: 0; margin-bottom: 20px; }
-  .hero-actions .button, .hero-actions .button-gold { width: 100%; min-width: 0; min-height: 50px; font-size: 0.88rem; justify-content: center; }
+  .hero-actions { order: 5; flex-direction: column; align-items: stretch; width: 100%; gap: 10px; margin-top: 4px; margin-bottom: 18px; }
+  .hero-actions .button, .hero-actions .button-gold { width: 100%; min-width: 0; min-height: 48px; font-size: 0.88rem; justify-content: center; }
   .hero-proof-modern { order: 6; flex-direction: column; align-items: stretch; gap: 8px; margin-top: 0; width: 100%; }
-  .proof-pill-modern { width: 100%; justify-content: flex-start; }
+  .proof-pill-modern { width: 100%; justify-content: flex-start; padding: 7px 14px; }
 
   /* Stats Section */
   .proof-strip-modern { padding: 48px 0; }
@@ -1880,29 +1885,32 @@ h1 span { color: var(--red); }
 
 /* 3. Small Mobile Breakpoint (max-width: 480px) */
 @media (max-width: 480px) {
-  .page-width { width: min(calc(100% - 24px), 1344px); }
-  .site-header-inner { width: min(calc(100% - 24px), 1728px); min-height: 64px; }
-  .brand-logo { width: 140px; }
-  .hero h1 { font-size: clamp(1.95rem, 8.5vw, 2.8rem); }
-  .hero-visual { min-height: 380px; height: 380px; }
-  #robot-video { max-height: 340px; }
+  .page-width { width: min(calc(100% - 20px), 1344px); }
+  .site-header-inner { width: min(calc(100% - 20px), 1728px); min-height: 60px; }
+  .brand-logo { width: 135px; }
+  .hero h1 { font-size: clamp(1.85rem, 8vw, 2.5rem); margin-bottom: 12px; }
+  .hero-lede { font-size: clamp(0.85rem, 3.6vw, 0.92rem); margin-bottom: 12px; }
+  .hero-visual { margin-top: 22px; }
+  .robot-image-stage { margin-top: 50px; margin-bottom: -16px; }
+  #robot-video { max-width: 210px; max-height: 175px; }
   .bot-chat {
-    width: min(calc(100% - 24px), 260px);
-    padding: 10px 12px 11px;
+    width: min(calc(100% - 16px), 245px);
+    padding: 9px 12px 10px;
     border-radius: 12px;
   }
   .bot-chat-title {
-    font-size: 0.74rem;
+    font-size: 0.72rem;
     margin-bottom: 3px;
-    gap: 5px;
+    gap: 4px;
   }
   .bot-chat-title strong {
-    font-size: 0.82rem;
+    font-size: 0.8rem;
   }
   .bot-chat p {
-    font-size: 0.72rem;
-    line-height: 1.3;
+    font-size: 0.7rem;
+    line-height: 1.28;
   }
+  .hero-actions .button, .hero-actions .button-gold { min-height: 44px; font-size: 0.84rem; }
   .stat-card-modern { padding: 16px 14px; }
   .even-card { padding: 20px 16px; }
   .compact-cta-card { padding: 24px 14px; }
