@@ -1662,18 +1662,6 @@ h1 span { color: var(--red); }
 /* COMPREHENSIVE MOBILE & TABLET RESPONSIVE AUDIT & FIXES        */
 /* ============================================================= */
 
-/* 0. Large Desktop Monitors (1920x1080 and above) */
-@media (min-width: 1400px) {
-  .hero-visual {
-    margin-left: auto;
-  }
-  .assistant-panel {
-    left: -6%;
-  }
-  .real-ui-capabilities-card {
-    left: 0%;
-  }
-}
 
 /* 1. Large Tablet Breakpoint (max-width: 1080px) */
 @media (max-width: 1080px) {
