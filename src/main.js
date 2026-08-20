@@ -117,7 +117,7 @@ const completeIntroAndReveal = () => {
     return;
   }
 
-  updateCenterSpeech("Hi, I'm Kanta!", "I can read, understand, and process your documents. What would you like to do today?");
+  updateCenterSpeech("Hi, I'm Kanta!", "I can read, understand, and process your documents. What would you like to do today?.");
 
   const transitionTL = gsap.timeline();
 
