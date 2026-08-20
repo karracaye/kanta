@@ -103,7 +103,7 @@ const completeIntroAndReveal = () => {
   if (introCompleted) return;
   introCompleted = true;
 
-  const targetLeft = window.innerWidth <= 740 ? '50%' : '48%';
+  const targetLeft = window.innerWidth <= 740 ? '50%' : '52%';
 
   if (prefersReducedMotion) {
     heroSection?.classList.remove('hero-intro-active');
