@@ -26,7 +26,8 @@ app.innerHTML = `
   </header>
 
   <main id="top">
-    <section class="hero page-width" aria-labelledby="hero-title">
+    <!-- Top Hero Section -->
+    <section class="hero page-width hero-intro-active" aria-labelledby="hero-title">
       <div class="hero-copy">
         <h1 id="hero-title">Orchestrate<br />Intelligent Tasks.<br />Build Your <span>AI Agents.</span></h1>
         <p class="hero-lede">Build LLM-powered APIs, automate complex workflows,<br class="desktop-only" /> and deploy data apps - all from a single, unified platform.</p>
@@ -34,15 +35,36 @@ app.innerHTML = `
           <a class="button button-red" href="#contact"><span class="button-phone" aria-hidden="true">☎</span> Call Us</a>
           <a class="button button-gold" href="#features">Explore Features <span aria-hidden="true">↗</span></a>
         </div>
-        <div class="hero-proof" aria-label="Platform highlights">
-          <span><i aria-hidden="true"></i>17+ Workflow Nodes</span>
-          <span><i aria-hidden="true"></i>Cloud Hosted</span>
-          <span><i aria-hidden="true"></i>Multi-LLM Support</span>
+        
+        <!-- Modern Clean Highlights Badges -->
+        <div class="hero-proof-modern" aria-label="Platform highlights">
+          <div class="proof-pill-modern">
+            <span class="proof-pill-icon icon-red">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+            </span>
+            <strong>17+ Workflow Nodes</strong>
+          </div>
+
+          <div class="proof-pill-modern">
+            <span class="proof-pill-icon icon-emerald">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19H9a4.5 4.5 0 1 1 .9-8.9 6 6 0 0 1 11.6 2.4A4.5 4.5 0 0 1 17.5 19z"/></svg>
+            </span>
+            <strong>Cloud Hosted</strong>
+            <span class="proof-live-dot"></span>
+          </div>
+
+          <div class="proof-pill-modern">
+            <span class="proof-pill-icon icon-purple">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10H12V2z"/><path d="M12 12L2.1 12a10 10 0 0 0 9.9 10V12z"/><path d="M12 12V2a10 10 0 0 1 10 10H12z"/></svg>
+            </span>
+            <strong>Multi-LLM Support</strong>
+          </div>
         </div>
+
       </div>
 
       <div class="hero-visual visual-sequence-pending" aria-label="Kanta AI robot with support assistant preview">
-        <div class="visual-intro-mark" aria-hidden="true"><img src="/kanta-mark.png" alt="" /></div>
+        <div class="visual-intro-mark" aria-hidden="true"><img src="/kanta-mark.png" alt="Kanta logo mark" /></div>
         <div class="assistant-panel" aria-label="AI support assistant preview">
           <div class="assistant-panel-head"><div class="assistant-panel-title"><span class="assistant-panel-icon">▢</span><span><strong>AI Support Assistant</strong><small>Powered by Kanta.AI</small></span></div><span class="assistant-online"><i></i> Online</span></div>
           <div class="assistant-panel-body"><div class="assistant-user-bubble">What's my current order status?</div><div class="assistant-response"><p>Your order <strong>#ORD-2024-1234</strong> is currently <b>in transit.</b></p><div class="assistant-response-meta"><span>Expected delivery:<b>Feb 15, 2024</b></span><span>Carrier:<b>FedEx</b></span></div></div><div class="assistant-typing"><i></i><i></i><i></i><span>AI is generating a chart...</span></div></div>
@@ -56,21 +78,279 @@ app.innerHTML = `
         </div>
         <div class="robot-image-stage"><video id="robot-video" muted playsinline preload="auto" aria-label="A friendly Kanta robot assistant waving hello"><source src="/white.mp4" type="video/mp4" /></video></div>
         <div class="bot-chat" aria-hidden="true">
-          <div class="bot-chat-title"><img class="brand-logo-mini" src="/kanta-logo.png" alt="" /><strong>Hi, I'm Kanta!</strong></div>
-          <p>I can read, understand, and process your documents. What would you like to do today?</p>
+          <div class="bot-chat-title"><img class="brand-logo-mini" src="/kanta-logo.png" alt="" /><strong id="bot-chat-title-text">Hi!</strong></div>
+          <p id="bot-chat-msg-text">I can read, understand, and process your documents. What would you like to do today?</p>
         </div>
       </div>
     </section>
 
-    <section class="proof-strip" aria-label="Kanta platform stats">
-      <div class="page-width proof-grid">
-        <span class="proof-kicker">One platform.<br /><em>Infinite possibilities.</em></span>
-        <div><strong>3x</strong><span>faster workflow builds</span></div>
-        <div><strong>24/7</strong><span>agents on call</span></div>
-        <div><strong>100%</strong><span>your data, your rules</span></div>
+    <!-- Modern UI Stats & Headline Section -->
+    <section class="proof-strip-modern" aria-label="Kanta platform stats">
+      <div class="page-width proof-grid-modern">
+        <div class="proof-header-modern">
+          <div class="proof-eyebrow-pill">
+            <span class="proof-eyebrow-dot"></span>
+            <span>Autonomous AI Platform</span>
+          </div>
+          <h2 class="proof-title-headline">
+            Build your app<br />
+            <span class="highlight-text-red">in minutes.</span>
+          </h2>
+        </div>
+
+        <div class="proof-stats-container">
+          <div class="stat-card-modern">
+            <div class="stat-head-row">
+              <span class="stat-number">3x</span>
+              <span class="stat-chip chip-red">⚡ Speed</span>
+            </div>
+            <span class="stat-label">Faster workflow builds</span>
+            <small class="stat-sub">From prompt to production DAG</small>
+          </div>
+
+          <div class="stat-card-modern">
+            <div class="stat-head-row">
+              <span class="stat-number">24/7</span>
+              <span class="stat-chip chip-emerald"><i class="live-dot-mini"></i> Live</span>
+            </div>
+            <span class="stat-label">Agents on call</span>
+            <small class="stat-sub">Autonomous AI task execution</small>
+          </div>
+
+          <div class="stat-card-modern">
+            <div class="stat-head-row">
+              <span class="stat-number">100%</span>
+              <span class="stat-chip chip-purple">🛡️ Secure</span>
+            </div>
+            <span class="stat-label">Your data, your rules</span>
+            <small class="stat-sub">Enterprise privacy & control</small>
+          </div>
+        </div>
       </div>
     </section>
 
+    <!-- ULTRA-SIMPLE, BEAUTIFUL & CLEAR AI STACK COMPARISON SECTION -->
+    <section class="stack-section-modern page-width" id="stack-comparison">
+      
+      <div class="stack-header-center">
+        <div class="stack-badge-pill">
+          <span class="stack-badge-dot"></span>
+          <span>THE PROBLEM & SOLUTION</span>
+        </div>
+
+        <h2 class="stack-title">
+          Your AI stack is <span class="text-red-highlight">too fragmented</span>
+        </h2>
+
+        <p class="stack-subhead">
+          Most teams building AI applications end up juggling 4-5 different tools, each with its own learning curve, billing, and integration challenges.
+        </p>
+
+        <!-- Interactive Switcher -->
+        <div class="stack-mode-switcher">
+          <button id="btn-stack-problem" class="switcher-btn">
+            <span class="switcher-icon">❌</span> The Typical Stack (Fragmented)
+          </button>
+          <button id="btn-stack-solution" class="switcher-btn active-solution">
+            <span class="switcher-icon">✅</span> The Kanta Solution (4 → 1 Unified)
+          </button>
+        </div>
+      </div>
+
+      <!-- Main Interactive App Stage & Mascot Grid -->
+      <div class="stack-canvas-grid">
+        
+        <!-- Left: Clear 3D-Glass Workflow Builder App Canvas -->
+        <div class="stack-app-window">
+          
+          <!-- App Window Header Bar -->
+          <div class="app-window-header">
+            <div class="window-dots">
+              <span class="dot-red"></span>
+              <span class="dot-yellow"></span>
+              <span class="dot-green"></span>
+            </div>
+            <div class="window-title">Kanta.AI — Workflow Builder</div>
+            <div class="window-status">
+              <span class="status-live-dot"></span> Running
+            </div>
+          </div>
+
+          <!-- App Window Canvas Area -->
+          <div class="app-window-body">
+            
+            <!-- SOLUTION VIEW (Clean 4 -> 1 Unified Workflow Pipeline) -->
+            <div id="view-solution" class="pipeline-stage active-stage">
+              <div class="pipeline-title-bar">
+                <span>Document Processing Pipeline</span>
+                <span class="pipeline-badge">Visual DAG</span>
+              </div>
+
+              <!-- Animated Pipeline Nodes -->
+              <div class="pipeline-nodes-container">
+                <div class="node-box node-start">
+                  <div class="node-icon-circle green-pulse"></div>
+                  <strong>Start</strong>
+                  <small>Trigger Event</small>
+                </div>
+
+                <div class="node-connector">
+                  <div class="connector-line"></div>
+                </div>
+
+                <div class="node-box node-ocr">
+                  <div class="node-tag">OCR</div>
+                  <strong>Extract</strong>
+                  <small>Document Parse</small>
+                </div>
+
+                <div class="node-connector">
+                  <div class="connector-line"></div>
+                </div>
+
+                <div class="node-box node-llm">
+                  <div class="node-tag">LLM</div>
+                  <strong>Process</strong>
+                  <small>AI Reasoning</small>
+                </div>
+
+                <div class="node-connector">
+                  <div class="connector-line"></div>
+                </div>
+
+                <div class="node-box node-output">
+                  <div class="node-icon-circle gold-pulse"></div>
+                  <strong>Output</strong>
+                  <small>Structured Data</small>
+                </div>
+              </div>
+
+              <!-- Analytics KPIs Row -->
+              <div class="pipeline-kpi-row">
+                <div class="kpi-card">
+                  <strong>2.4k</strong>
+                  <span>Requests Processed</span>
+                </div>
+                <div class="kpi-card">
+                  <strong class="text-green">99.2%</strong>
+                  <span>Success Rate</span>
+                </div>
+                <div class="kpi-card">
+                  <strong>340ms</strong>
+                  <span>Avg. Latency</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- PROBLEM VIEW (Fragmented 5-Tool Stack Warning) -->
+            <div id="view-problem" class="pipeline-stage">
+              <div class="problem-warning-bar">
+                ⚠️ 5 Separate Tools & Codebases Required
+              </div>
+
+              <div class="problem-stack-list">
+                <div class="problem-item">
+                  <span class="problem-layer">Frontend UI</span>
+                  <span class="problem-tech">React, Vue, Svelte</span>
+                  <span class="problem-tag tag-red">More developers needed</span>
+                </div>
+
+                <div class="problem-item">
+                  <span class="problem-layer">Backend Logic</span>
+                  <span class="problem-tech">FastAPI, Express, .NET</span>
+                  <span class="problem-tag tag-red">Weeks of boilerplate</span>
+                </div>
+
+                <div class="problem-item">
+                  <span class="problem-layer">Database</span>
+                  <span class="problem-tech">PostgreSQL + ORMs</span>
+                  <span class="problem-tag tag-red">Schema overhead</span>
+                </div>
+
+                <div class="problem-item">
+                  <span class="problem-layer">AI/LLM Integration</span>
+                  <span class="problem-tech">OpenAI SDK + Custom Code</span>
+                  <span class="problem-tag tag-red">Scattered across layers</span>
+                </div>
+
+                <div class="problem-item">
+                  <span class="problem-layer">Infrastructure</span>
+                  <span class="problem-tech">Separate deployments each</span>
+                  <span class="problem-tag tag-red">DevOps nightmare</span>
+                </div>
+              </div>
+
+              <div class="problem-result-footer">
+                <strong>Result:</strong> 5-6 tools, multiple codebases, separate deployments, and a tangled mess impossible to maintain.
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Floating Badges -->
+          <div class="canvas-floating-badge badge-nodes">
+            <div class="badge-icon-bg bg-emerald">⚡</div>
+            <div>
+              <strong>17+ Nodes</strong>
+              <small>Ready to use</small>
+            </div>
+          </div>
+
+          <div class="canvas-floating-badge badge-consolidation">
+            <div class="badge-icon-bg bg-orange">📚</div>
+            <div>
+              <strong>4 → 1</strong>
+              <small>Tools consolidated</small>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right: Kanta 3D Mascot & Feature Cards -->
+        <div class="stack-mascot-panel">
+          <div class="mascot-speech-card">
+            <div class="speech-header">
+              <span class="speech-avatar">A</span>
+              <strong>Kanta AI Assistant</strong>
+            </div>
+            <p id="mascot-speech-text">
+              Say goodbye to 5 separate tools! Kanta unifies your frontend, backend, database, and LLMs into one intuitive workflow builder.
+            </p>
+          </div>
+
+          <div class="mascot-image-stage">
+            <img src="/kanta-robot-3d-waving.png" alt="3D Kanta AI Robot Mascot" class="mascot-3d-img" />
+          </div>
+
+          <div class="solution-highlights-grid">
+            <div class="solution-check-item">
+              <span class="check-icon">✓</span>
+              <span>Frontend + Backend + Database in one platform</span>
+            </div>
+            <div class="solution-check-item">
+              <span class="check-icon">✓</span>
+              <span>No code required—build visually</span>
+            </div>
+            <div class="solution-check-item">
+              <span class="check-icon">✓</span>
+              <span>AI-native from the ground up</span>
+            </div>
+            <div class="solution-check-item">
+              <span class="check-icon">✓</span>
+              <span>Self-hosted; your data stays yours</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="stack-cta-bar">
+        <a href="#contact" class="button button-red button-explore">Explore the unified stack <span aria-hidden="true">↗</span></a>
+      </div>
+
+    </section>
+
+    <!-- Features Section -->
     <section class="feature-section page-width" id="features">
       <div class="section-heading">
         <div><p class="eyebrow"><span class="eyebrow-line"></span> Everything in sync</p><h2>From first prompt<br />to <em>real-world result.</em></h2></div>
@@ -116,28 +396,46 @@ app.innerHTML = `
   <footer class="site-footer page-width"><a class="brand" href="#top"><img class="brand-logo brand-logo-footer" src="/kanta-logo.png" alt="Kanta" /></a><span>Intelligence, orchestrated.</span><div><a href="#features">Features</a><a href="#contact">Contact</a><span>© 2025 Kanta</span></div></footer>
 `;
 
-gsap.from('.hero-copy > *', { opacity: 0, y: 24, duration: 0.75, stagger: 0.08, ease: 'power3.out', delay: 0.1 });
-gsap.from('.hero-visual', { opacity: 0, x: 24, duration: 0.95, ease: 'power3.out', delay: 0.24 });
-
+// Elements references
+const heroSection = document.querySelector('.hero');
+const heroCopy = document.querySelector('.hero-copy');
+const heroCopyElements = document.querySelectorAll('.hero-copy > *');
+const heroVisual = document.querySelector('.hero-visual');
 const chatPopup = document.querySelector('.bot-chat');
+const chatTitleText = document.querySelector('#bot-chat-title-text');
+const chatMsgText = document.querySelector('#bot-chat-msg-text');
 const robotVideo = document.querySelector('#robot-video');
 const robotStage = document.querySelector('.robot-image-stage');
 const introMark = document.querySelector('.visual-intro-mark');
-const heroVisual = document.querySelector('.hero-visual');
 const assistantPanel = document.querySelector('.assistant-panel');
 const featureList = document.querySelector('.visual-feature-list');
 const chatUserBubble = document.querySelector('.assistant-user-bubble');
 const chatResponse = document.querySelector('.assistant-response');
 const chatTyping = document.querySelector('.assistant-typing');
 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-const revealableVisuals = [assistantPanel, featureList, chatPopup].filter(Boolean);
+const revealableVisuals = [assistantPanel, featureList].filter(Boolean);
 
-gsap.set(revealableVisuals, { autoAlpha: 0, y: 14 });
-gsap.set(robotStage, { autoAlpha: 0, scale: 0.92 });
+// Calculate screen center offset for desktop viewport
+const getCenterOffset = () => {
+  if (window.innerWidth <= 740) return 0;
+  const heroWidth = heroSection?.getBoundingClientRect().width || window.innerWidth;
+  return -0.25 * heroWidth;
+};
+
+// Initial GSAP setup
+gsap.set(heroCopyElements, { autoAlpha: 0, y: 30 });
+gsap.set(revealableVisuals, { autoAlpha: 0, y: 20 });
+gsap.set(chatPopup, { autoAlpha: 0, scale: 0.8, y: 10, left: '50%' });
+gsap.set(robotStage, { autoAlpha: 0, scale: 0.95 });
 gsap.set(robotVideo, { autoAlpha: 0, '--robot-x': '0%', '--robot-y': '0%' });
-gsap.set(introMark, { autoAlpha: 0, scale: 0.5, rotate: -14 });
+gsap.set(introMark, { autoAlpha: 0, scale: 0.4, rotate: -10 });
+
+// Center heroVisual dead-center during intro
+const initialOffset = getCenterOffset();
+gsap.set(heroVisual, { x: initialOffset });
 heroVisual?.classList.remove('visual-sequence-pending');
 
+// Right-side Assistant panel turns
 const assistantChatTurns = [
   {
     question: "What's my current order status?",
@@ -183,66 +481,143 @@ const startAssistantChat = () => {
     .to([chatResponse, chatUserBubble], { autoAlpha: 0, y: -4, duration: 0.32 });
 };
 
-const revealChatPopup = (onShown) => {
-  if (!chatPopup) return;
-  if (prefersReducedMotion) {
-    gsap.set(chatPopup, { autoAlpha: 1, scale: 1, y: 0 });
-    onShown?.();
-    return;
-  }
-  gsap.timeline()
-    .to(chatPopup, { autoAlpha: 1, scale: 1.04, y: 0, duration: 0.44, ease: 'back.out(1.7)' })
-    .to(chatPopup, { scale: 1, duration: 0.18, ease: 'power2.out' })
-    .call(() => onShown?.())
-    .to(chatPopup, { y: -4, duration: 2.8, repeat: -1, yoyo: true, ease: 'sine.inOut', delay: 1.5 });
+// Sequential Speech Helper
+const updateCenterSpeech = (title, msg) => {
+  if (chatTitleText) chatTitleText.textContent = title;
+  if (chatMsgText) chatMsgText.textContent = msg;
 };
 
-const revealAssistantVisuals = () => {
-  if (!robotVideo) return;
+// Complete Intro: Move Robot from Center -> Right Side, Move Speech Bubble farther right (76%)
+let introCompleted = false;
+const completeIntroAndReveal = () => {
+  if (introCompleted) return;
+  introCompleted = true;
+
   if (prefersReducedMotion) {
-    gsap.set(robotVideo, { '--robot-x': '12%', '--robot-y': '14%' });
-    revealChatPopup(() => {
-      gsap.set(assistantPanel, { autoAlpha: 1, y: 0 });
-      gsap.set(featureList, { autoAlpha: 1, y: 0 });
+    heroSection?.classList.remove('hero-intro-active');
+    gsap.set(heroVisual, { x: 0 });
+    gsap.set(robotVideo, { '--robot-x': '12%', '--robot-y': '14%', autoAlpha: 1 });
+    gsap.set(heroCopyElements, { autoAlpha: 1, y: 0 });
+    gsap.set(chatPopup, { autoAlpha: 1, scale: 1, y: 0, left: '76%' });
+    gsap.set(assistantPanel, { autoAlpha: 1, y: 0 });
+    gsap.set(featureList, { autoAlpha: 1, y: 0 });
+    startAssistantChat();
+    return;
+  }
+
+  // Update speech bubble to full greeting
+  updateCenterSpeech("Hi, I'm Kanta!", "I can read, understand, and process your documents. What would you like to do today?");
+
+  const transitionTL = gsap.timeline();
+
+  // 1. Move entire visual stage from DEAD-CENTER -> RIGHT SIDE
+  transitionTL
+    .to(heroVisual, { x: 0, duration: 1.15, ease: 'power3.inOut' })
+    .to(robotVideo, { '--robot-x': '12%', '--robot-y': '14%', duration: 1.15, ease: 'power3.inOut' }, '<')
+    // Move speech bubble farther to the right side (76%)
+    .to(chatPopup, { left: window.innerWidth <= 740 ? '50%' : '76%', duration: 1.15, ease: 'power3.inOut' }, '<');
+
+  // 2. Fade in & reveal Left Side Content ("Orchestrate Intelligent Tasks...")
+  transitionTL.to(heroCopyElements, {
+    autoAlpha: 1,
+    y: 0,
+    duration: 0.85,
+    stagger: 0.1,
+    ease: 'power3.out'
+  }, '-=0.7');
+
+  // 3. Reveal Right Side Assistant Panel & Capability Badges
+  transitionTL.to(assistantPanel, {
+    autoAlpha: 1,
+    y: 0,
+    duration: 0.5,
+    ease: 'power3.out',
+    onComplete: () => {
       startAssistantChat();
-    });
-    return;
-  }
-  gsap.to(robotVideo, { '--robot-x': '12%', '--robot-y': '14%', duration: 0.78, ease: 'power3.inOut' });
-  revealChatPopup(() => {
-    gsap.to(assistantPanel, {
-      autoAlpha: 1,
-      y: 0,
-      duration: 0.48,
-      ease: 'power3.out',
-      onComplete: () => {
-        startAssistantChat();
-        gsap.to(featureList, { autoAlpha: 1, y: 0, duration: 0.48, ease: 'power3.out' });
-      }
-    });
-  });
+      gsap.to(featureList, { autoAlpha: 1, y: 0, duration: 0.45, ease: 'power3.out' });
+      heroSection?.classList.remove('hero-intro-active');
+    }
+  }, '-=0.4');
+
+  // Ambient floating animation for speech bubble
+  gsap.to(chatPopup, { y: -5, duration: 2.8, repeat: -1, yoyo: true, ease: 'sine.inOut', delay: 1.8 });
 };
 
-robotVideo?.addEventListener('ended', revealAssistantVisuals, { once: true });
-if (robotVideo?.ended) {
-  revealAssistantVisuals();
-}
+// Handle video end event
+robotVideo?.addEventListener('ended', completeIntroAndReveal, { once: true });
 
+// MAIN INTRO SEQUENCE TIMELINE
 if (introMark && robotVideo && robotStage) {
-  const intro = gsap.timeline({ delay: 0.18 });
-  intro
-    .to(introMark, { autoAlpha: 1, scale: 1, rotate: 0, duration: 0.62, ease: 'back.out(1.7)' })
-    .to(introMark, { scale: 1.06, duration: 0.28, repeat: 1, yoyo: true, ease: 'sine.inOut' }, '+=0.12')
-    .to(introMark, { autoAlpha: 0, scale: 0.72, duration: 0.34, ease: 'power2.in' }, '+=0.24')
-    .call(() => {
-      gsap.set(robotStage, { autoAlpha: 1, scale: 0.92 });
-      gsap.set(robotVideo, { autoAlpha: 1 });
-      robotVideo.playbackRate = 1.35;
-      robotVideo.play().catch(() => {});
-    })
-    .to(robotStage, { scale: 1, duration: 0.54, ease: 'back.out(1.2)' });
+  const introTL = gsap.timeline({ delay: 0.2 });
+
+  // 1. Show Logo Icon First in the Dead Center of Screen
+  introTL
+    .to(introMark, { autoAlpha: 1, scale: 1, rotate: 0, duration: 0.65, ease: 'back.out(1.7)' })
+    .to(introMark, { scale: 1.08, duration: 0.3, repeat: 1, yoyo: true, ease: 'sine.inOut' }, '+=0.15')
+    .to(introMark, { autoAlpha: 0, scale: 0.7, duration: 0.35, ease: 'power2.in' }, '+=0.2');
+
+  // 2. Show Robot Video Walking in the Center
+  introTL.call(() => {
+    gsap.set(robotStage, { autoAlpha: 1, scale: 1 });
+    gsap.set(robotVideo, { autoAlpha: 1, '--robot-x': '0%', '--robot-y': '0%' });
+    robotVideo.playbackRate = 1.15;
+    robotVideo.play().catch(() => {});
+  });
+
+  // 3. Pop up Speech Bubble in Center with Sequential Speeches
+  introTL.call(() => {
+    updateCenterSpeech("Hi!", "");
+    gsap.to(chatPopup, { autoAlpha: 1, scale: 1, y: 0, duration: 0.38, ease: 'back.out(1.6)' });
+  }, null, '+=0.3');
+
+  // Speech Step 2: "I'm Kanta!"
+  introTL.call(() => {
+    updateCenterSpeech("Hi!", "I'm Kanta!");
+  }, null, '+=1.2');
+
+  // Speech Step 3: "How may I help you?"
+  introTL.call(() => {
+    updateCenterSpeech("Hi! I'm Kanta!", "How may I help you?");
+  }, null, '+=1.3');
+
+  // When video completes walking (or fallback duration), transition to right side
+  introTL.call(() => {
+    if (robotVideo.ended || robotVideo.paused) {
+      completeIntroAndReveal();
+    }
+  }, null, '+=2.2');
 }
 
+// -------------------------------------------------------------
+// INTERACTIVE SWITCHER LOGIC (PROBLEM VS SOLUTION)
+// -------------------------------------------------------------
+const btnProblem = document.querySelector('#btn-stack-problem');
+const btnSolution = document.querySelector('#btn-stack-solution');
+const viewSolution = document.querySelector('#view-solution');
+const viewProblem = document.querySelector('#view-problem');
+const speechText = document.querySelector('#mascot-speech-text');
+
+btnProblem?.addEventListener('click', () => {
+  btnProblem.classList.add('active-problem');
+  btnSolution?.classList.remove('active-solution');
+  viewProblem?.classList.add('active-stage');
+  viewSolution?.classList.remove('active-stage');
+  if (speechText) {
+    speechText.textContent = "Warning! Traditional stacks force you to integrate 5 separate tools—leading to code bloat, high costs, and DevOps nightmares.";
+  }
+});
+
+btnSolution?.addEventListener('click', () => {
+  btnSolution.classList.add('active-solution');
+  btnProblem?.classList.remove('active-problem');
+  viewSolution?.classList.add('active-stage');
+  viewProblem?.classList.remove('active-stage');
+  if (speechText) {
+    speechText.textContent = "Say goodbye to 5 separate tools! Kanta unifies your frontend, backend, database, and LLMs into one intuitive workflow builder.";
+  }
+});
+
+// Mobile Menu toggles
 const menuToggle = document.querySelector('.menu-toggle');
 const mobileMenu = document.querySelector('.mobile-menu');
 menuToggle?.addEventListener('click', () => {
@@ -260,6 +635,7 @@ mobileMenu?.querySelectorAll('a').forEach((link) => {
   });
 });
 
+// Contact Form handler
 const form = document.querySelector('#contact-form');
 const success = document.querySelector('.form-success');
 form?.addEventListener('submit', (event) => {
