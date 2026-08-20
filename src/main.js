@@ -103,12 +103,14 @@ const completeIntroAndReveal = () => {
   if (introCompleted) return;
   introCompleted = true;
 
-  const targetLeft = window.innerWidth <= 740 ? '50%' : '51%';
+  const isLargeScreen = window.innerWidth >= 1400;
+  const targetLeft = window.innerWidth <= 740 ? '50%' : (isLargeScreen ? '58%' : '51%');
+  const targetRobotX = isLargeScreen ? '18%' : '12%';
 
   if (prefersReducedMotion) {
     heroSection?.classList.remove('hero-intro-active');
     gsap.set(heroVisual, { x: 0 });
-    gsap.set(robotVideo, { '--robot-x': '12%', '--robot-y': '14%', autoAlpha: 1 });
+    gsap.set(robotVideo, { '--robot-x': targetRobotX, '--robot-y': '14%', autoAlpha: 1 });
     gsap.set(heroCopyElements, { autoAlpha: 1, y: 0 });
     gsap.set(chatPopup, { autoAlpha: 1, scale: 1, y: 0, left: targetLeft });
     gsap.set(assistantPanel, { autoAlpha: 1, y: 0 });
@@ -123,7 +125,7 @@ const completeIntroAndReveal = () => {
 
   transitionTL
     .to(heroVisual, { x: 0, duration: 1.15, ease: 'power3.inOut' })
-    .to(robotVideo, { '--robot-x': '12%', '--robot-y': '14%', duration: 1.15, ease: 'power3.inOut' }, '<')
+    .to(robotVideo, { '--robot-x': targetRobotX, '--robot-y': '14%', duration: 1.15, ease: 'power3.inOut' }, '<')
     .to(chatPopup, { left: targetLeft, duration: 1.15, ease: 'power3.inOut' }, '<');
 
   transitionTL.to(heroCopyElements, {
