@@ -103,7 +103,7 @@ const completeIntroAndReveal = () => {
   if (introCompleted) return;
   introCompleted = true;
 
-  const targetLeft = window.innerWidth <= 740 ? '50%' : '52%';
+  const targetLeft = window.innerWidth <= 740 ? '50%' : '55%';
 
   if (prefersReducedMotion) {
     heroSection?.classList.remove('hero-intro-active');
@@ -134,14 +134,13 @@ const completeIntroAndReveal = () => {
     ease: 'power3.out'
   }, '-=0.7');
 
-  transitionTL.to(assistantPanel, {
+  transitionTL.to([assistantPanel, featureList], {
     autoAlpha: 1,
     y: 0,
     duration: 0.5,
     ease: 'power3.out',
     onComplete: () => {
       startAssistantChat();
-      gsap.to(featureList, { autoAlpha: 1, y: 0, duration: 0.45, ease: 'power3.out' });
       heroSection?.classList.remove('hero-intro-active');
     }
   }, '-=0.4');
@@ -151,7 +150,7 @@ const completeIntroAndReveal = () => {
 
 robotVideo?.addEventListener('ended', completeIntroAndReveal, { once: true });
 
-// MAIN INTRO SEQUENCE TIMELINE (Speech popup at left: 50%)
+// MAIN INTRO SEQUENCE TIMELINE (Speech popup at left: 52% on desktop)
 if (introMark && robotVideo && robotStage) {
   const introTL = gsap.timeline({ delay: 0.2 });
 
@@ -169,7 +168,8 @@ if (introMark && robotVideo && robotStage) {
 
   introTL.call(() => {
     updateCenterSpeech("Hi, I'm Kanta!", "How may I help you?");
-    gsap.to(chatPopup, { autoAlpha: 1, scale: 1, y: 0, left: '50%', duration: 0.38, ease: 'back.out(1.6)' });
+    const initLeft = window.innerWidth <= 740 ? '50%' : '52%';
+    gsap.to(chatPopup, { autoAlpha: 1, scale: 1, y: 0, left: initLeft, duration: 0.38, ease: 'back.out(1.6)' });
   }, null, '+=0.3');
 
   introTL.call(() => {
